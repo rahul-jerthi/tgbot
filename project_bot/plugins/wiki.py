@@ -14,7 +14,7 @@ async def handle_wikipedia_search(event):
     try:
     
         result = wikipedia.summary(search_query, sentences=3)
-        response = f"Search results for '{search_query}':\n\n{result}"
+        response = f"**RJBOT** Search results for '{search_query}':\n\n{result}"
     except wikipedia.exceptions.DisambiguationError as e:
 
         response = f"There are multiple results for '{search_query}'. Please be more specific."
